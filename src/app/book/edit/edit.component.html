@@ -1,0 +1,18 @@
+<form (ngSubmit)="updateBook()">
+  <div>
+    <label for="name">Title</label>
+    <input type="text" name="title" [(ngModel)]="book.title" id="name" aria-describedby=""
+           placeholder="">
+  </div>
+  <div>
+    <label for="name">Author</label>
+    <input type="text" name="author" [(ngModel)]="book.author" id="price" aria-describedby=""
+           placeholder="">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea name="description" [(ngModel)]="book.description" class="form-control" id="description"
+              aria-describedby="" placeholder=""></textarea>
+  </div>
+  <button type="submit" >Update</button>
+</form>

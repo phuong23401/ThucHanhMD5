@@ -1,0 +1,19 @@
+<form (ngSubmit)="createBook()">
+  <div >
+    <label for="name">Title</label>
+    <input  type="text" name="title" [(ngModel)]="book.title" id="name" aria-describedby=""
+           placeholder="">
+  </div>
+  <div>
+    <label for="name" >Author</label>
+    <input type="text" name="author" [(ngModel)]="book.author" id="price" aria-describedby=""
+           placeholder="">
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea name="description" [(ngModel)]="book.description" id="description"
+              aria-describedby="" placeholder=""></textarea>
+  </div>
+  <button  type="submit" style="text-align: center;">Save</button>
+</form>
+
