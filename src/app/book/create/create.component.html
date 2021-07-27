@@ -1,19 +1,37 @@
+<h1>Create new book</h1>
 <form (ngSubmit)="createBook()">
-  <div >
-    <label for="name">Title</label>
-    <input  type="text" name="title" [(ngModel)]="book.title" id="name" aria-describedby=""
-           placeholder="">
-  </div>
-  <div>
-    <label for="name" >Author</label>
-    <input type="text" name="author" [(ngModel)]="book.author" id="price" aria-describedby=""
-           placeholder="">
-  </div>
-  <div>
-    <label for="description">Description</label>
-    <textarea name="description" [(ngModel)]="book.description" id="description"
-              aria-describedby="" placeholder=""></textarea>
-  </div>
-  <button  type="submit" style="text-align: center;">Save</button>
+  <table style="text-align: center">
+    <tr>
+      <td>
+        <label for="name">Title</label>
+      </td>
+      <td>
+        <input  type="text" name="title" [(ngModel)]="book.title" id="name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="name" >Author</label>
+      </td>
+      <td>
+        <input type="text" name="author" [(ngModel)]="book.author" id="price">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="description">Description</label>
+      </td>
+      <td>
+          <textarea name="description" [(ngModel)]="book.description" id="description"
+          aria-describedby="" placeholder=""></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button  type="submit">Save</button>
+      </td>
+    </tr>
+  </table>
 </form>
 
